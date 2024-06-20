@@ -1,0 +1,468 @@
+{
+	"id": "f72e59cf-97cf-4030-b34b-0f33a23b0968",
+	"name": "Create, update and delete users",
+	"timestamp": "2024-06-20T21:34:36.602Z",
+	"collection_id": "34629285-e0196836-1186-4ab1-b870-cea55a2691ac",
+	"folder_id": 0,
+	"environment_id": "34629285-21718202-f6c1-4f6f-85fd-5d93238a4c12",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-20T21:34:29.653Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "8c0214c3-0bee-4988-97cf-41557334239b",
+			"name": "Get list of users",
+			"url": "https://gorest.co.in/public/v2/users",
+			"time": 700,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				700
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "fac02f1e-2254-4837-ade7-30d218d38973",
+			"name": "Open page 12",
+			"url": "https://gorest.co.in/public/v2/users?page=12",
+			"time": 319,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				319
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4e2cc692-3e39-4e9d-a637-0254d21a08dc",
+			"name": "Empty body",
+			"url": "https://gorest.co.in/public/v2/users",
+			"time": 366,
+			"responseCode": {
+				"code": 422,
+				"name": "Unprocessable Entity"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				366
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "d8dfefe1-1d2b-43b1-903c-a2046c14fdcf",
+			"name": "Create new user",
+			"url": "https://gorest.co.in/public/v2/users",
+			"time": 333,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				333
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "eb43c957-28df-4d81-8b2f-a216fd25d7e7",
+			"name": "Get  created user",
+			"url": "https://gorest.co.in/public/v2/users?id=6973997",
+			"time": 341,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				341
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7d135de1-3688-4df0-b84b-8b87a78e0eca",
+			"name": "Create another user",
+			"url": "https://gorest.co.in/public/v2/users",
+			"time": 319,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				319
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "f86c5365-992c-442e-98b1-8cc7216b26d9",
+			"name": "Get our users",
+			"url": "https://gorest.co.in/public/v2/users?name=Peter Ivanov",
+			"time": 327,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				327
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d5f45a53-3861-43ec-a36e-f09961d07794",
+			"name": "Change \"name\" and \"email\"",
+			"url": "https://gorest.co.in/public/v2/users/6974355",
+			"time": 346,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				346
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "39721392-8c37-48e6-9035-7d1483a85ca6",
+			"name": "Get updated data",
+			"url": "https://gorest.co.in/public/v2/users?id=6974355",
+			"time": 322,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "822d0bc5-be67-4ab4-9ffa-3e06244d75fd",
+			"name": "Change \"email\" and \"status\"",
+			"url": "https://gorest.co.in/public/v2/users/6974356",
+			"time": 444,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				444
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d8eb2647-1fc5-4d6a-9157-caab59d3d80e",
+			"name": "Get updated data",
+			"url": "https://gorest.co.in/public/v2/users?id=6974356",
+			"time": 319,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				319
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "067e05fb-17de-42e5-a3cb-22980a7fcaac",
+			"name": "Delete user",
+			"url": "https://gorest.co.in/public/v2/users/6974355",
+			"time": 422,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				422
+			],
+			"allTests": [
+				{
+					"Status code name has string": true
+				}
+			]
+		},
+		{
+			"id": "ad15d1fd-4d06-44af-b9cd-b1161b04753f",
+			"name": "Get deleted user",
+			"url": "https://gorest.co.in/public/v2/users?name=Peter Ivanov",
+			"time": 328,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				328
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "244da624-5067-42f8-bdfe-0d21ca8af518",
+			"name": "Delete another user",
+			"url": "https://gorest.co.in/public/v2/users/6974356",
+			"time": 359,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code name has string": true
+			},
+			"testPassFailCounts": {
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				359
+			],
+			"allTests": [
+				{
+					"Status code name has string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5245,
+	"collection": {
+		"requests": [
+			{
+				"id": "8c0214c3-0bee-4988-97cf-41557334239b",
+				"method": "GET"
+			},
+			{
+				"id": "fac02f1e-2254-4837-ade7-30d218d38973",
+				"method": "GET"
+			},
+			{
+				"id": "4e2cc692-3e39-4e9d-a637-0254d21a08dc",
+				"method": "POST"
+			},
+			{
+				"id": "d8dfefe1-1d2b-43b1-903c-a2046c14fdcf",
+				"method": "POST"
+			},
+			{
+				"id": "eb43c957-28df-4d81-8b2f-a216fd25d7e7",
+				"method": "GET"
+			},
+			{
+				"id": "7d135de1-3688-4df0-b84b-8b87a78e0eca",
+				"method": "POST"
+			},
+			{
+				"id": "f86c5365-992c-442e-98b1-8cc7216b26d9",
+				"method": "GET"
+			},
+			{
+				"id": "d5f45a53-3861-43ec-a36e-f09961d07794",
+				"method": "PUT"
+			},
+			{
+				"id": "39721392-8c37-48e6-9035-7d1483a85ca6",
+				"method": "GET"
+			},
+			{
+				"id": "822d0bc5-be67-4ab4-9ffa-3e06244d75fd",
+				"method": "PATCH"
+			},
+			{
+				"id": "d8eb2647-1fc5-4d6a-9157-caab59d3d80e",
+				"method": "GET"
+			},
+			{
+				"id": "067e05fb-17de-42e5-a3cb-22980a7fcaac",
+				"method": "DELETE"
+			},
+			{
+				"id": "ad15d1fd-4d06-44af-b9cd-b1161b04753f",
+				"method": "GET"
+			},
+			{
+				"id": "244da624-5067-42f8-bdfe-0d21ca8af518",
+				"method": "DELETE"
+			}
+		]
+	}
+}
