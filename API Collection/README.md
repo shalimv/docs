@@ -8,4 +8,4 @@
 
 # JSON
 
-![JSON](https://github.com/shalimv/docs/tree/main/API%20Collection/JSON)
+[JSON](https://github.com/shalimv/docs/blob/main/API%20Collection/JSON/Create%2C%20update%20and%20delete%20users.postman_test_run.json)
